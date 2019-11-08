@@ -1,0 +1,18 @@
+.edit{
+	background-image: linear-gradient(navy,powderblue);
+	border: 0px;
+	width: 99%;
+}
+.delete{
+	background-image: linear-gradient(navy,powderblue);
+	border: 0px;
+}
+.table{
+	width: 120%;
+	color: navy;
+}
+.btn{
+	background-image: linear-gradient(navy,powderblue);
+	border: 0px;
+	color: white;
+}

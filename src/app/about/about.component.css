@@ -1,0 +1,27 @@
+.card{
+	border: 0px !important; 
+	border-radius: 0px !important;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.card-title{
+	font-size:50px;
+}
+.card-img-overlay{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+    align-items: center;
+}
+.card:hover{
+	opacity: 0.7;
+	color: navy;
+
+	}
+
+.bild2{
+	object-fit: cover;
+	height: 100%;
+}

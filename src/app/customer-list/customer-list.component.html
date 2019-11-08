@@ -1,0 +1,30 @@
+<form class="form-inline">
+        <input name="searchInput" class="form-control"  placeholder="Search" #searchInput="ngModel"  [(ngModel)]="searchText" style="width:80%;">
+        <button class="btn btn-outline-primary"  (click)="searchText=''">x</button>
+</form>
+<table class="table table-sm mt-2">
+        <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Adress</th>
+                <th>ZIP</th>
+                <th>City</th>
+        </thead>
+        <ng-container *ngFor="let customer of customerArray">
+                <tr class="table" *ngIf ="filterCondition(customer)">
+                        <td>{{customer.Name}}</td>
+                        <td>{{customer.email}}</td>
+                        <td>{{customer.mobile}}</td>
+                        <td>{{customer.adress}}</td>
+                         <td>{{customer.zip}}</td>
+                        <td>{{customer.city}}</td>
+
+                        <td>
+                                <button class=" edit btn btn-info" (click)="customerService.populateForm(customer)">Edit</button>
+                                <button class=" delete btn btn-danger" (click)="onDelete(customer.$key)">Delete</button>
+                        </td>
+                </tr>
+        </ng-container>
+</table>
+<div class="alert alert-danger" *ngIf="showDeletedMessage" >Deleted successfully</div>

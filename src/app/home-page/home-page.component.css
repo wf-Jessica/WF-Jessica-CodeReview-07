@@ -1,0 +1,14 @@
+img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}	
+.col-lg-4{
+	text-align: center;
+}
+h2{
+	color: navy;
+}
+h2:hover{
+	color: powderblue;
+}
